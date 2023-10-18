@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qm6E9FxWWB/CatDtF0dUZ8psTXbQrBjREW4z19zAZn0b8CvgJQlP6O8UHkAiAm0YumLcKvG5+yTh4SRlNo4qPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\francois\\source\\repos\\JeuNombreMagique\\JeuNombreMagique\\JeuNombreMagique.iOS\\JeuNombreMagique.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\francois\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\francois\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\francois\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

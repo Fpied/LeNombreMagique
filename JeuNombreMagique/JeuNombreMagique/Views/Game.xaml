@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JeuNombreMagique.Game"
+             xmlns:views="clr-namespace:JeuNombreMagique.Views"
+             Title="Game">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <views:StartView Grid.Row="0" Grid.Column="0"/>
+                <BoxView Grid.Row="2" Grid.Column="0" 
+                         Margin="10, 0,10,-30"
+                         HeightRequest="80"
+                         Rotation="-10" 
+                         Color="{StaticResource shadowColor}" />
+
+                <StackLayout Grid.Row="1" Grid.Column="0" VerticalOptions="Center">
+                <Label Text="Devinez le" TextColor="{StaticResource titleColor}" HorizontalOptions="Center" FontSize="30"/>
+                <Label Text="Nombre magique" TextColor="{StaticResource titleColor}" HorizontalOptions="Center" FontSize="30"/>
+                <Label Text="Entre x et x" TextColor="{StaticResource titleColor}" x:Name="minMaxLabel" HorizontalOptions="Center" FontSize="20" FontAttributes="Italic"/>
+                <Entry Placeholder="?" PlaceholderColor="White" BackgroundColor="{StaticResource shadowColor}" Margin="0, 30, 0, 0" x:Name="numberEntry" FontSize="80" HorizontalOptions="Center" WidthRequest="120" HorizontalTextAlignment="Center" Keyboard="Numeric" />
+
+                <Button TextColor="White" Text="deviner" BackgroundColor="{StaticResource shadowColor}" TextTransform="Uppercase" Clicked="Button_Clicked" HorizontalOptions="Center" WidthRequest="120" />
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
